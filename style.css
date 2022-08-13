@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Bai+Jamjuree:wght@400;600&family=Edu+QLD+Beginner:wght@500&family=Fira+Sans:ital,wght@1,700&family=Gentium+Book+Plus:ital@1&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Mingzat&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;400;500;700;800;900&family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-color: #E0E8FF;
+    background-size: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.147) 8px 8px 20px;
+}
+img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.bottom{
+    padding: 2.3rem;
+}
+.title{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.text{
+    color: #7280A7;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+section{
+    text-align: center;
+    padding: 0 1.5rem;
+}
+.informations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    background-color: #F5F7FF;
+    border-radius: 10px;
+    padding: 1rem 2.2rem;
+    margin-bottom:1.7rem;
+    font-weight: 500;
+}
+.link{
+    position: absolute;
+    right: 2rem;
+}
+.price{
+    color: #707da0;
+}
+.plan{
+    color: #1f2f56;
+}
+.link{
+    color: #3829e0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link:hover,
+.btn-1:hover{
+    opacity: 0.70;
+    text-decoration: none;
+}
+.plan-price{
+    display: flex;
+    flex-direction: column;
+    gap: 0.47rem;
+}
+.btn-1{
+    color: #fff;
+    font-size: 18px;
+    padding: 0.80rem 2rem;
+    text-align: center;
+    background-color: #3829e0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.link-2{
+    color: #000;
+    opacity: 0.75;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+.link-2:hover{
+    opacity: 1;
+}
+@media screen and (max-width:530px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .card{
+        max-width: 73%;
+        min-width: 60%;
+        max-height: 78%;
+    } 
+    .bottom{
+        padding: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 20px;
+    } 
+    .text{
+        font-size: 14px;
+        padding-bottom: 1rem;
+    }
+    section{
+        padding: 0 0.80rem;
+    }
+    .informations{
+        gap: 0.8rem;
+        padding: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 13px;
+    }
+    .link{
+        right: 1rem;
+    }
+    .plan-price{
+        gap: 0.2rem;
+    }
+    .btn-1{
+        font-size: 13px;
+    }
+    .icon{
+        width: 45px;
+    }
+    .link-2{
+        font-size: 14px;
+        padding-top: 0.9rem;
+    }
+}
+@media screen and (max-width:410px){
+    .card{
+        max-width: 80%;
+        max-height: 78%;
+    } 
+    .bottom{
+        width: 100%;
+    }
+}
